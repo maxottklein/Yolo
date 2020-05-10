@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <title>dwml</title>
+  </head>
+  <body>
+
+    <div class="Nav">
+
+      <div id="Logo">
+
+        <a href="index.html">d.w.ml</a>
+
+      </div>
+
+
+      <div id="About">
+
+        <a href="index.html">about</a>
+
+      </div>
+            
+    </div>
+
+    <div class='Header'>
+
+      <img src="dog.png">
+      
+    </div>
+
+
+
+    <h1>how do machines experience art?</h1>
+
+    <div class='containter'>
+
+
+
+      <div class="button-group filter-button-group">
+
+        <button class=button data-filter="*">all</button>
+        <button class=button data-filter=".person">person</button>
+        <button class=button data-filter=".boat">boat</button>
+        <button class=button data-filter=".elephant">elephant</button>
+        <button class=button data-filter=".bird">bird</button>
+        <button class=button data-filter=".dog">dog</button>
+        <button class=button data-filter=".cat">cat</button>
+        <button class=button data-filter=".horse">horse</button>
+        <button class=button data-filter=".sheep">sheep</button>
+        <button class=button data-filter=".cow">cow</button>
+        <button class=button data-filter=".bottle">bottle</button>
+        <button class=button data-filter=".wine-glass">wine glass</button>
+        <button class=button data-filter=".cup">cup</button>
+        <button class=button data-filter=".cutlery">cutlery</button>
+
+        <button class=button data-filter=".bowl">bowl</button>
+
+        <button class=button data-filter=".apple">apple</button>
+
+        <button class=button data-filter=".orange">orange</button>
+
+        <button class=button data-filter=".chair">chair</button>
+
+        <button class=button data-filter=".pottedplant">pottedplant</button>
+
+        <button class=button data-filter=".diningtable">diningtable</button>
+
+        <button class=button data-filter=".book">book</button>
+
+        <button class=button data-filter=".vase">vase</button>
+      
+      </div>
+
+      <div class = 'grid'>
+
+
+      </div>
+    
+    </div>
+    
+
+
+
+
+
+
+  <script type="text/javascript" src="image_analyzed.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="isotope.pkgd.js"></script>
+  <script>
+    
+    // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+      });
+    // filter items on button click
+
+      $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+
+</script>
+
+<script type="text/javascript">
+  
+  setTimeout(function() {
+   // trigger a click on the "all" button
+  }, 100);
+
+</script>
+
+
+  </body>
+</html>

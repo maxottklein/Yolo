@@ -1,0 +1,127 @@
+body{
+	display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+
+.Nav {
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+  /*border: 1px solid #212b36;*/
+  background-color: rgb(255, 255, 255, .50);
+  z-index: 2;
+} 
+
+
+	#Logo {
+  
+	    text-align: left;
+	    font-size: 25px;
+	    line-height: 50px;
+	    font-family: Apercu Mono;
+	    font-weight: 300;
+	    padding-top: 25px;
+	    padding-left: 40px;
+		/*border: 1px solid #212b36;	*/
+	    }
+
+	#Logo a {
+
+		text-decoration: none;
+		color: #212b36;
+	}
+
+	#About {
+
+	    text-align: right;
+	    font-size: 25px;
+	    line-height: 50px;
+	    font-family: Apercu Mono;
+	    font-weight: 300;
+	    padding-top: 25px;
+	    padding-right: 40px;
+		/*border: 1px solid #212b36;*/	
+	    }
+
+
+	#About a {
+
+		color: #212b36;
+	}
+
+
+
+.Header{
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+}
+
+h1{
+	
+	font-size:30px;
+	font-family: Apercu Mono;
+	font-weight: 300;
+	color: #212b36;
+}
+
+
+.button-group{
+/*	margin-left: 5px;
+	margin-right: 5px;*/
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.button{ 
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background:#ededed;
+	/*background-color:#ededed;*/
+	border-radius:10px;
+	border:1px solid #ededed;
+	display:inline-block;
+	color: #212b36;
+	font-family:Apercu Mono;
+	font-size:20px;
+	font-weight: 400;
+	padding:6px 24px;
+	text-decoration:none;
+}
+.button:hover {
+	background:#212b36;
+	/*background-color:#212b36;*/
+	color: #ededed;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.nav{
+	height: 10%;
+}
+
+.grid{
+	margin-bottom: 100px;
+}
+
+.grid-item{
+
+	width: 15%;
+	margin-top:20px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
