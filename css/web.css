@@ -1,0 +1,436 @@
+
+
+html, body {
+
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: 100%;
+	font-size: 16px;
+	font-family: Trim;
+	color: #212b36;
+	margin: 0;
+	border: 1px solid #212b36;
+}
+
+
+/*Typography*/
+
+h1 {
+	font-size: 2rem;
+	color: #212b36;
+	/*font-family: Apercu Mono;*/
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 2rem;
+	/*font-family: Apercu Mono;*/
+	font-weight: 300;
+}
+
+a {
+	font-size: 2rem;
+	color: #212b36;
+	/*font-family: Apercu Mono;*/
+	font-weight: 300;
+	text-decoration: none;
+}
+
+
+/*Layout*/
+
+
+.container {
+
+	width: 100%;
+	margin: 0 auto;
+	/*border: 1px solid #212b36;*/
+
+}
+
+.columns {
+
+	display: flex;
+	margin-top: 6rem;
+	height: 100vh;
+
+	/*border: 1px solid #212b36;*/
+}
+
+.col-1, .col-2 {
+
+	flex: 1 auto;
+  	overflow-y: scroll;
+
+}
+
+
+.col-1 {
+
+	width: 20%;
+	border-right: 1px solid #212b36;
+	
+
+}
+
+.col-2 {
+
+	width: 80%;
+	padding-left: 1.5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	border-top: 1px solid #212b36;
+	overflow: auto;
+	border-bottom: 1px solid #212b36;
+
+	/*border: 1px solid #212b36;*/
+
+}
+
+
+/* Navigation*/
+
+.Nav {
+
+	display:grid;
+  	grid-template-columns: 8fr 2fr;
+  	width: 100%;
+	height: 6em;
+	line-height: 6em;
+  	border-bottom: 2px solid #212b36;
+  	border-top: 2px solid #212b36;
+  	border-left: 1px solid #212b36;
+  	position: fixed;
+  	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%; /* Full width */
+  	background: white;
+  	z-index: 2;
+
+}
+
+#Logo {
+
+text-align: left;
+padding-left: 2em;
+/*border: 1px solid #212b36;*/
+}
+
+#About {
+
+	text-align: center;
+	background:#212b36;
+	height: 6em;
+}
+
+#About a {
+
+	color:white;
+}
+
+
+/*Picture Grid*/
+
+
+.grid-sizer {
+
+	width: 18%;
+
+}
+
+.grid-item {
+
+	width: 18%;
+	margin-bottom: 2%;
+}
+
+
+.gutter-sizer { 
+
+	width: 2%; 
+
+}
+
+.button {
+
+	display: block;
+	width: 100%;
+	height:6rem;
+	font-size: 1.5rem;
+	background: none;
+	color: #212b36;
+	/*padding-top: 1.25em;
+	padding-bottom: 1.25em;*/
+	padding-left: 1.5em;
+	text-align: left;
+	border: 1px solid #212b36;
+	font-family: Trim;
+
+}
+
+
+.button:hover{
+
+	background: #212b36;
+	color:white;
+
+}
+
+.button:focus{
+
+	background: #212b36;
+	color:white;
+	outline: 0;
+}
+
+
+
+
+/* 	TABLET 	*/
+
+
+@media only screen and (max-width: 1100px) {
+
+
+.container {
+	
+	width:100%;
+
+}
+
+.Nav {
+
+	display:grid;
+  	grid-template-columns: 7fr 3fr;
+	height: 5em;
+	line-height: 5em;
+  	border-bottom: 2px solid #212b36;
+  	border-top: 2px solid #212b36;
+  	border-left: 1px solid #212b36;
+  	position: fixed;
+  	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%; /* Full width */
+  	background: white;
+  	z-index: 2;
+
+}
+
+
+
+
+.columns {
+
+	display: flex;
+	flex-direction: column;
+  	flex-wrap: nowrap;
+  	overflow-x: none;
+  	width: 100%;
+  	margin-top: 5rem;
+  	border:none;
+}
+
+/*.col-1, .col-2 {
+
+	flex: 1;
+	width: 100%;
+	border:none;
+
+}*/
+
+
+.col-1 {
+
+	width:100%;
+	height: 11rem;
+	background: #F0F0F0;
+	border: 1px solid #212b36;
+	flex:none;
+
+}
+
+.col-2 {
+
+	width:100%;
+	padding-top: 3%;
+	padding-left: 3%;
+	border-left: 1px solid #212b36;
+	overflow: none;
+
+}
+
+.button-group{
+
+	display: grid;
+ 	grid-template-columns: repeat(11, 200px);
+  	grid-template-rows: 4rem 4rem;
+  	grid-row-gap: 1rem;
+  	grid-column-gap: 1rem;
+  	padding-top: 1rem;
+  	padding-left: 1rem;
+  	padding-right: 1rem;
+  	overflow-x: scroll;
+
+}
+
+a {
+	font-size: 1.5rem;
+	color: #212b36;
+	/*font-family: Apercu Mono;*/
+	font-weight: 300;
+	text-decoration: none;
+}
+
+#About {
+
+	height: 5em;
+}
+
+
+/*Picture Grid*/
+
+
+.grid-sizer {
+
+	width: 22%;
+
+}
+
+.grid-item {
+
+	width: 22%;
+	margin-bottom: 2%;
+}
+
+
+.gutter-sizer { 
+
+	width: 2%; 
+
+}
+
+
+
+.button {
+
+	display: inline-block;
+	width: 100%;
+	height: 4rem;
+	font-size: 1.25rem;
+	background:white;
+	border: 2px solid #212b36;
+	text-align: center;
+	padding:0;
+
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+
+.Nav {
+
+	display:grid;
+  	grid-template-columns: 6fr 4fr;
+	height: 4em;
+	line-height: 4em;
+  	border-bottom: 2px solid #212b36;
+  	border-top: 2px solid #212b36;
+  	border-left: 1px solid #212b36;
+  	position: fixed;
+  	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%; /* Full width */
+  	background: white;
+  	z-index: 2;
+
+}
+
+#About {
+
+	height: 4em;
+}
+
+
+.columns {
+
+  	margin-top: 4rem;
+  	
+}
+
+.col-1 {
+
+	width:100%;
+	height: 5rem;
+	background: #F0F0F0;
+	border: 1px solid #212b36;
+	flex:none;
+
+}
+
+.col-2 {
+
+	width:100%;
+	padding-top: 4%;
+	padding-left: 4%;
+	border-left: 1px solid #212b36;
+	overflow: none;
+
+}
+
+
+.button-group{
+
+	display: grid;
+ 	grid-template-columns: repeat(22, 150px);
+  	grid-template-rows: 3rem;
+  	grid-column-gap: 1rem;
+  	padding-top: 1rem;
+  	padding-left: 1rem;
+  	padding-right: 1rem;
+  	overflow-x: scroll;
+
+}
+
+
+.button {
+
+	display: inline-block;
+	width: 100%;
+	height: 3rem;
+	font-size: 1.25rem;
+	background:white;
+	border: 2px solid #212b36;
+	text-align: center;
+	padding:0;
+
+}
+
+
+/*Picture Grid*/
+
+
+.grid-sizer {
+
+	width: 44%;
+
+}
+
+.grid-item {
+
+	width: 44%;
+	margin-bottom: 4%;
+}
+
+
+.gutter-sizer { 
+
+	width: 4%; 
+
+}
+
+
+}
+
+
