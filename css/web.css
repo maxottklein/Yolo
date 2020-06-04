@@ -6,7 +6,7 @@ html, body {
 	overflow-x: hidden;
 	overflow-y: 100%;
 	font-size: 16px;
-	font-family: Trim;
+	font-family: 'Space Mono', monospace;
 	color: #212b36;
 	margin: 0;
 	border: 1px solid #212b36;
@@ -19,20 +19,20 @@ h1 {
 	font-size: 2rem;
 	color: #212b36;
 	/*font-family: Apercu Mono;*/
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h2 {
 	font-size: 2rem;
 	/*font-family: Apercu Mono;*/
-	font-weight: 300;
+	font-weight: 400;
 }
 
 a {
 	font-size: 2rem;
 	color: #212b36;
 	/*font-family: Apercu Mono;*/
-	font-weight: 300;
+	font-weight: 400;
 	text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ padding-left: 2em;
 	padding-left: 1.5em;
 	text-align: left;
 	border: 1px solid #212b36;
-	font-family: Trim;
+	font-family: 'Space Mono', monospace;
 
 }
 
