@@ -3,13 +3,14 @@
 html, body {
 
 	max-width: 100%;
+	max-height: 100%;
 	overflow-x: hidden;
-	overflow-y: 100%;
+	/*overflow-y: 100%*/;
 	font-size: 16px;
 	font-family: 'Space Mono', monospace;
 	color: #212b36;
 	margin: 0;
-	border: 1px solid #212b36;
+	/*border: 1px solid #212b36;*/
 }
 
 
@@ -37,6 +38,20 @@ a {
 }
 
 
+p {
+	font-size: 1.5rem;
+	color: #212b36;
+	/*font-family: Apercu Mono;*/
+	font-weight: 400;
+}
+
+p a {
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+
+
 /*Layout*/
 
 
@@ -44,6 +59,7 @@ a {
 
 	width: 100%;
 	margin: 0 auto;
+	height: 100%
 	/*border: 1px solid #212b36;*/
 
 }
@@ -126,6 +142,21 @@ padding-left: 2em;
 
 	color:white;
 }
+
+
+/* About */
+
+.text{ 
+
+	height: 100%;
+	padding-left: 14rem;
+	padding-right: 14rem;
+	padding-bottom: 8rem;
+	padding-top: 14rem;
+  	
+
+ }
+
 
 
 /*Picture Grid*/
@@ -285,6 +316,26 @@ a {
 }
 
 
+/*About*/
+
+.text{ 
+
+	padding-left: 8rem;
+	padding-right: 8rem;
+	padding-bottom: 3rem;
+	padding-top: 10rem;
+
+ }
+
+p {
+	font-size: 1.5rem;
+	color: #212b36;
+	/*font-family: Apercu Mono;*/
+	font-weight: 400;
+	border: none;
+}
+
+
 /*Picture Grid*/
 
 
@@ -351,6 +402,27 @@ a {
 
 	height: 4em;
 }
+
+
+/*About*/
+
+.text{ 
+
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-bottom: 2rem;
+	padding-top: 7rem;
+
+ }
+
+p {
+	font-size: 1rem;
+	color: #212b36;
+	/*font-family: Apercu Mono;*/
+	font-weight: 400;
+	border: none;
+}
+
 
 
 .columns {
