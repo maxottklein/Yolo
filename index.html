@@ -15,6 +15,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
     <title>YOLO</title>
 
+    <!-- Wait 1.5 seconds and then automatically click the 'All Button' -->
+
   <script type="text/javascript">
     setTimeout("CallButton()",1500)
     function CallButton()
@@ -69,7 +71,7 @@
               <button class="button" data-filter=".cow">Cow</button>
               <button class="button" data-filter=".cup">Cup</button>
               <button class="button" data-filter=".cutlery">Cutlery</button>
-          <button class="button" data-filter=".dog">Dog</button>
+              <button class="button" data-filter=".dog">Dog</button>
               <button class="button" data-filter=".diningtable">Diningtable</button>
               <button class="button" data-filter=".wine-glass">Glass</button>
               <button class="button" data-filter=".horse">Horse</button>
@@ -131,14 +133,6 @@
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
         });
-
-  </script>
-
-  <script type="text/javascript">
-  
-  setTimeout(function() {
-   // trigger a click on the "all" button
-  }, 100);
 
   </script>
 
